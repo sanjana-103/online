@@ -1,22 +1,21 @@
 class Course {
     String name;
     int marks;
-
-    Course(String name, int marks) {
+    int id;
+    Course(String name, int marks,int id) {
         this.name = name;
         this.marks = marks;
-    }
+        this.id=id;}
 }
 class Student {
-    String name = "John Doe";
+    String name = "Ravi";
     String program = "BCA";
     int semester = 4;
     Course[] courses = {
-        new Course("BDA", 35),
-        new Course("Java", 75),
-        new Course("Devops", 30)
+        new Course("Math", 35,01),
+        new Course("Java", 75,02),
+        new Course("English", 30,03)
     };
-
     void displayInfo() {
         System.out.println("Student Name: " + name);
         System.out.println("Program: " + program);
@@ -42,4 +41,5 @@ public class OnlineRegistration {
         s.displayLowMarks();
     }
 }
+
 
